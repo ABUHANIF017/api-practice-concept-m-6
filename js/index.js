@@ -70,7 +70,8 @@ searceField.addEventListener('keypress', async(event) => {
               <h2 class="card-title">${category}</h2>
               <p>${title.length > 20 ? title.slice(0,20) + '...' : title }</p>
               <div class="card-actions justify-end">
-                <button class="btn btn-primary">Show Details</button>
+              <label for="my-modal-4" onclick="showModal('${description}','${image}')" class="btn modal-button">Show Details</label>
+
               </div>
             </div>
           </div>
@@ -79,3 +80,12 @@ searceField.addEventListener('keypress', async(event) => {
         });
     }
 })
+const showModal = (description, image) => {
+    // console.log(description, image)
+    const modalBody = document.getElementById('modal-body');
+    modalBody.innerHTML = `
+   
+    <p class="py-4">${description}</p>
+    <img class="w-60 h-60 mx-auto" src="${image}" />
+    `
+}
