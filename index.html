@@ -14,19 +14,48 @@
 
 </head>
 
-<body>
+<body class="p-5">
+
+    <!-- header-section-start -->
     <header>
-        <div class="form-control w-full max-w-xs mx-auto mt-4">
+        <div class="form-control w-full max-w-xs mx-auto mt-4 mb-5">
             <label class="label">
               <span class="label-text">Searce Your Product</span>
               <span class="label-text-alt">Press <kbd class="kbd kbd-sm">Inter</kbd>
               </span>
             </label>
-            <input type="text" placeholder="Searce here" class="input input-bordered w-full max-w-xs" />
+            <input id="searce-field" type="text" placeholder="Searce here" class="input input-bordered w-full max-w-xs" />
 
         </div>
     </header>
+    <!-- header-section-end -->
 
+    <!-- not found-section-start -->
+    <div id="not-found">
+
+    </div>
+    <!-- not found-section-end -->
+
+    <!-- main-section-start -->
+    <main>
+        <section>
+            <div class="container">
+                <div class="flex container">
+                    <div class="flex-none">
+                        <ul id="list-menu" class="menu w-40 bg-secondary text-secondary-content p-2 rounded-box">
+                            <!-- <li><a>Item 1</a></li>
+                            <li><a>Item 2</a></li>
+                            <li><a>Item 3</a></li> -->
+                        </ul>
+                    </div>
+                    <div id="product-container" class="grow grid grid-cols-4 gap-4">
+
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <!-- main-section-end -->
 
     <script src="js/index.js"></script>
 </body>
